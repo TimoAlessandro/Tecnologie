@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Partita">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="445dp"
+        android:layout_height="785dp"
+        app:srcCompat="@drawable/sfondopartita"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="-21dp" />
+
+    <TextView
+        android:id="@+id/textPartita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="PARTITA"
+        android:textColor="#0022FD"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="391dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="20"
+        android:textColor="#8C024E"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btninc"
+        app:layout_constraintStart_toEndOf="@+id/btndec"
+        app:layout_constraintTop_toBottomOf="@+id/txtPV" />
+
+    <TextView
+        android:id="@+id/txtDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="1"
+        android:textColor="#00C508"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/btnDado" />
+
+    <TextView
+        android:id="@+id/txtPV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:text="Punti Vita:"
+        android:textColor="#002AFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPartita" />
+
+    <TextView
+        android:id="@+id/txtRisultato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginBottom="281dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Sconfitto!"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPartita" />
+
+    <Button
+        android:id="@+id/btndec"
+        android:layout_width="53dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginBottom="412dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="-"
+        android:textSize="24sp"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btninc"
+        android:layout_width="53dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="412dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="+"
+        android:textSize="24sp"
+        app:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNuovaPartita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginLeft="129dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="166dp"
+        android:text="Nuova Partita"
+        app:backgroundTint="#3CAC00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnIndietro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="21dp"
+        android:text="Menu"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Chronometer
+        android:id="@+id/cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginRight="182dp"
+        android:layout_marginBottom="28dp"
+        android:textColor="#000DFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRisultato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLife" />
+
+    <Button
+        android:id="@+id/btnDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="53dp"
+        android:text="Dado"
+        app:layout_constraintStart_toEndOf="@+id/btnIndietro"
+        app:layout_constraintTop_toBottomOf="@+id/btnNuovaPartita" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
